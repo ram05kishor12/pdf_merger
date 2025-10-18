@@ -8,8 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { splitPDF } from "./server/route1";
-import { mergePDF } from "./server/route";
+import { splitPDF } from "./actions/route1";
+import { mergePDF } from "./actions/route";
 
 export default function Home() {
     const [files, setFiles] = useState<FileList | null>(null);
